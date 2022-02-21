@@ -1,0 +1,33 @@
+{
+  "name": "athena",
+  "version": "0.1.0",
+  "description": "A command and events library for Discord.js that takes the hassle out of management",
+  "main": "lib/index.js",
+  "repository": "https://github.com/AideJeune/athena.git",
+  "author": "Avery <avery@aidejeune.fr>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.{ts,js}\"",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "lint-fix": "tslint --fix -c tslint.json -p tsconfig.json"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@discordjs/builders": "^0.8.2",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.24.0",
+    "discord-buttons": "^3.2.1",
+    "discord.js": "^13.3.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.5.5"
+  }
+}
