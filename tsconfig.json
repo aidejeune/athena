@@ -1,16 +1,22 @@
 {
     "compilerOptions": {
-        "target": "es5",
         "module": "commonjs",
-        "declaration": true,
+        "esModuleInterop": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
         "outDir": "./lib",
-        "strict": true
+        "baseUrl": "",
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ]
+        },
+        "resolveJsonModule": true,
+        "rootDir": "src"
     },
     "include": [
-        "src"
-    ],
-    "exclude": [
-        "node_modules",
-        "**/__tests__/*"
+        "src/**/*"
     ]
 }
