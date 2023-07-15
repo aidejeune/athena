@@ -12,6 +12,9 @@
     "gts": "3.1.1",
     "typescript": "5.1.6"
   },
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
     "lint": "gts lint",
     "clean": "gts clean",
@@ -20,5 +23,8 @@
     "prepare": "yarn.cmd run compile",
     "pretest": "yarn.cmd run compile",
     "posttest": "yarn.cmd run lint"
+  },
+  "dependencies": {
+    "discord.js": "^14.11.0"
   }
 }
