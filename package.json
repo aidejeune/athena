@@ -1,0 +1,24 @@
+{
+  "name": "athena",
+  "version": "1.0.0",
+  "description": "A simple solution to slash commands on discord.js v14, with permission management and more",
+  "main": "src/index.ts",
+  "repository": "https://github.com/AideJeune/athena/",
+  "author": "Web Aide Jeune",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "gts": "3.1.1",
+    "typescript": "5.1.6"
+  },
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "yarn.cmd run compile",
+    "pretest": "yarn.cmd run compile",
+    "posttest": "yarn.cmd run lint"
+  }
+}
